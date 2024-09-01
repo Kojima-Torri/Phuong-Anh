@@ -1,0 +1,101 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: palevioletred;
+    color: beige;
+}
+
+header {
+    background-color: palevioletred;
+    color: beige;
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header ::after {
+    content: '';
+    background-image: url('background-pattern.png');
+    background-size: cover;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: pink;
+    text-shadow: 2px 2px #ff6347;
+}
+
+h2 {
+    color: pink;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+#about-me, #hobbies, #gallery, #contact {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: palevioletred;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    font-size: 1.2em;
+    padding-left: 25px;
+    position: relative;
+}
+
+ul li::before {
+    content: "🌸";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: palevioletred;
+    color: beige;
+}
